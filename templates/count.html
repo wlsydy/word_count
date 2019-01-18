@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>统计结果</h1>
+{{ txt_content }}
+<br>
+{{ len_txt_value }}
+<br>
+{% for w,c in sorted_word %}
+{{ w }}={{ c }}
+<br>
+{% endfor %}
+</body>
+</html>
