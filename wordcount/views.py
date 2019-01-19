@@ -15,3 +15,6 @@ def count(request):
            count_word[w]+=1
     sorted_count_word=sorted(count_word.items(),key=lambda w:w[0],reverse=True)
     return render(request,'count.html',{'txt_content':read_txt,'len_txt_value':len_txt,"sorted_word":sorted_count_word})
+
+def about(request):
+    return render(request,'about.html')
